@@ -101,7 +101,7 @@ h2 {
     width: 325px;
 }
 
-.header_top_left h1{
+.header_top_title_Mops {
     color: #5ed5e5;
     text-transform: uppercase;
     font-size: 48px;
@@ -110,14 +110,13 @@ h2 {
     font-weight: 600;
 }
 
-.header_top_left h3{
+.header_top_title_Familia {
     color: white;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 2px;
 }
-
 
 .header_top_right {
     display: flex;
@@ -144,12 +143,17 @@ h2 {
 .item-contact p{
     color:  #ff0000;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 1px;  
+}
+
+.item-contact p:nth-child(1) {
     padding-right: 70px;
 }
 
-.social_network_icon_wrapper img{
-    margin-left: 15px;
+.social_network_icon_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
 }
 
 
