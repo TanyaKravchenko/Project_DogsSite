@@ -5,12 +5,19 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    font-size: 18px;
 }
 
 h2 {
     font-size: 48px;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    color: #333333;
+    margin-left: 95px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 28px;
     color: #333333;
 }
 
@@ -32,6 +39,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     height: 685px; /*без высоты не получается*/
+    margin-bottom: 37px;
  }
 
 .navbar {
@@ -126,10 +134,11 @@ h2 {
 
 /*section class="contact"*/
 
+
 .item_contact_wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 37px;
+    margin-bottom: 70px;
 }
 
 .item-contact {
@@ -156,9 +165,222 @@ h2 {
     width: 10%;
 }
 
+/*our_philosophy*/
 
+.our_philosophy {
+    display: flex;
+}
 
+.our_philosophy_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
 
+.our_philosophy_left,
+.nursery_news_left,
+.footer-left {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/square.png);
+    background-repeat: no-repeat;
+    height: 255px;
+}
+
+.our_philosophy_right {
+    width: 570px;
+}
+
+/*want_puppy_black*/
+
+.want_puppy_black {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    height: 145px;
+}
+
+.want_puppy_black_wrapper {
+    display: flex;   
+    justify-content: space-between;
+}
+
+.want_puppy_header {
+    display: flex;
+    align-items: center;
+}
+
+.want_puppy_header h2 {
+    color: white;
+    margin-left: 0;
+}
+
+.button_black_wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.button_black {
+   font-size: 36px;
+   letter-spacing: 4px;
+   color: white;
+   border: solid 2px white;
+   padding: 20px 35px 20px 35px;
+   background-color: black;
+   cursor: pointer;
+}
+
+.button_black:hover {
+    color: #5ed5e5;
+ }
+
+.button_black:active {
+    color: #5ed5e5;
+ }
+
+ /*our_dogs*/
+
+.our_dogs {
+    display: flex;
+    background-color: #f2f3f3;
+}
+
+.our_dogs_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.our_dogs_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0 56px 0;
+}
+
+.our_dogs_header h2 {
+    margin-left: 0;
+}
+
+.prev, .next {
+    cursor: pointer;
+    font-size: 48px;
+    color:#808080;
+}
+
+.prev:hover,
+.next:hover {
+    color:#5ed5e5;
+}
+
+.prev:active,
+.next:active {
+    color:#5ed5e5;
+}
+
+.next {
+    padding-left: 10px;
+}
+
+.our_dogs_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+}
+.dog {
+    width: 29%;
+}
+
+.dog_name_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    height: 215px;
+}
+
+.dog_name {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: initial;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.dog_title {
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dog_text {
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+
+.button_dog_wrapper {
+    text-align: center;
+}
+
+.button_dog {
+    color: white;
+    background-color: #4d4d4d;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 15px 35px 15px 35px;
+    border: none;
+}
+
+.button_dog:hover {
+    background-color: #5ed5e5;  
+}
+
+.button_dog:active {
+    background-color: #5ed5e5;
+}
+
+/*nursery_news*/
+
+.nursery_news_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.nursery_top_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+}
+
+.nursery_news_left {
+    margin-top: 130px;
+}
+
+.nursery_news_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news_item_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.news_item_right p{
+    margin-left: 15px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+.news_item_text {
+    width: 340px;
+    margin-bottom: 40px;
+}
 
 /*footer*/
 
@@ -171,23 +393,20 @@ h2 {
 
 .footer_wrapper {
     display: flex;
-    align-items: center;
-    color: white;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.footer-left {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-image: url(../images/square.png);
-    background-repeat: no-repeat;
-    width: 385px;
-    height: 250px;
-    margin-right: 200px;
-}
+/*.footer-left  -  same .our_philosophy_left*/
 
 .footer-header h2 {
     margin-bottom: 40px;
+    color: white;
+    
+}
+
+.footer-header p {
+    margin-left: 95px;
     color: white;
 }
 
@@ -195,7 +414,8 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
+    height: 215px;
+    width: 570px;
 }
 
 .icon-location,
@@ -203,7 +423,8 @@ h2 {
 .email-icon {
     position: relative;
     line-height: 42px;
-    padding-left: 70px;
+    padding-left: 45px;
+    color: white;
 }
 
 .icon-location::before,
@@ -218,27 +439,22 @@ h2 {
 }
 
 .icon-location::before {
-    background: url(/images/icon_location.png) center 0 no-repeat;
+    background: url(/images/icon_location.png) left 0 no-repeat;
 }
 
 .phone-icon::before {
-    background: url(/images/phone-icon.png) center 0 no-repeat;
+    background: url(/images/phone-icon.png) left 0 no-repeat;
 }
 
 .email-icon::before {
-    background: url(/images/email-icon.png) center 0 no-repeat;
+    background: url(/images/email-icon.png) left 0 no-repeat;
+   
 }
 
 .icons {
     display: flex;
-}
-
-.icons a{
-    margin-right: 25px;
-}
-
-.icons a:first-child {
-    margin-left: 15px;
+    width: 20%;
+    justify-content: space-between;
 }
 
 .footer_map {
