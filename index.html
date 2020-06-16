@@ -6,6 +6,7 @@
     <meta name="author" content="Kravchenko Tanya">
     <title>Project_DogsSite</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 <body>
     <div class="site">
@@ -18,7 +19,11 @@
                         </div>
                             <div class="nav_container">
                                 <div class="nav">
-                                    <ul>
+                                    <input id="menu__toggle" type="checkbox" />
+                                    <label class="menu__btn" for="menu__toggle">
+                                    <span></span>
+                                    </label>
+                                    <ul class ="menu__box">
                                         <li><a class="nav-link" href="#">Главная страница</a></li>
                                         <li><a class="nav-link" href="#">О питомнике</a></li>
                                         <li><a class="nav-link" href="#">Наши собаки</a></li>
@@ -111,7 +116,7 @@
                         </div>
                     </div>
                     <div class="our_dogs_wrapper">
-                        <div class="dog">
+                        <div class="dog slider_item">
                             <div>
                                 <img src="./images/ourdog3.png" alt="ourdog">
                             </div>
@@ -133,7 +138,7 @@
                                 <button class="button_dog">Подробнее</button>
                             </div>    
                         </div>
-                        <div class="dog">
+                        <div class="dog slider_item thisnone1">
                             <div>
                                 <img src="./images/ourdog1.png" alt="ourdog">
                             </div>
@@ -155,7 +160,7 @@
                                 <button class="button_dog">Подробнее</button>
                             </div>        
                         </div>
-                        <div class="dog">
+                        <div class="dog slider_item thisnone">
                             <div>
                                 <img src="./images/ourdog4.png" alt="ourdog">
                             </div>
@@ -281,7 +286,9 @@
                     </div>	
                 </div>		
             </div>
-            <div class="footer_map"></div>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.5364899871283!2d27.55390136695148!3d53.9044419247627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfeafdabf52d%3A0xea786f0bd809e9bc!2z0KHQstC-0LHQvtC00YsuNA!5e0!3m2!1sru!2sby!4v1592249004842!5m2!1sru!2sby" width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </footer>
     </div>
     

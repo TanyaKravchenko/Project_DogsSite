@@ -21,6 +21,10 @@ p {
     color: #333333;
 }
 
+#menu__toggle {
+    opacity: 0;
+}
+
 .container {
     width: 100%;
     max-width: 1180px;
@@ -457,7 +461,7 @@ p {
     justify-content: space-between;
 }
 
-.footer_map {
-    background-image: url(../images/map.png);
+.map-responsive iframe{
     height: 315px;
+    width:100%;
 }
