@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -179,6 +179,10 @@ p {
     display: flex;
     justify-content: space-between;
     margin-bottom: 95px;
+}
+
+.our_philosophy_left {
+    padding-right: 20px;
 }
 
 .our_philosophy_left,

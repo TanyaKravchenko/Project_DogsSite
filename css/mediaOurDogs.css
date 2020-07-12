@@ -71,33 +71,10 @@
         visibility: visible;
         left: 0;
     }
-    /*------------*/
 
-    .header_top_right {
-        margin-right: 0;
+    .dog img{
+        width: 295px;
     }
-
-    .button_black {
-        width: 330px;   
-        padding: 10px 25px; 
-     }
-
-   .dog img{
-       width: 295px;
-   }
-
-   .nursery_news_img img{
-       width: 500px;
-   }
-
-   .news_item_right {
-       padding-right: 15px;
-   }
-
-   .news_item_text {
-       width: 300px;
-       padding-right: 20px;
-   }
 
    .footer-right {
        width: 400px;
@@ -105,6 +82,7 @@
 
 }
 @media (max-width: 768px) {
+
     h2 {
         font-size: 44px;
         letter-spacing: 1px;
@@ -119,84 +97,12 @@
         left: 700px;
     }
 
-    .item_contact_wrapper {
-        margin-bottom: 40px;
-    }
-
-    .item-contact p:nth-child(1) {
-        padding-right: 30px;
-    }
-
-    .social_network_icon_wrapper {
-        width: 15%;
-    }
-
-    .our_philosophy_container {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 50px;
-    }
-
-    .our_philosophy_left {
-        padding-right: 15px;
-    }
-
     .our_dogs_top {
         padding: 35px 0 35px 0;
     }
 
-    .nursery_news_left {
-        margin-top: 50px;
-    }
-
-    .nursery_news_right {
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .nursery_news_img img{
-        width: 350px;
-    }
-
-    .nursery_news_wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nursery_news_container {
-        margin-bottom: 0;
-    }
-
-    .news_item_container {
-        justify-content: center;
-    }
-
-    .news_item_left {
-        padding-right: 25px;
-    }
-
-    .news_item_text {
-        width: 600px;
-        padding-right: 20px;
-    }
-    
-    .news_item {
-        padding-bottom: 40px;
-    }
-
-    .slider_item {
-        flex: 0 0 50%; 
-        max-width: 50%;
-        padding-right: 15px;
-    }
-
     .dog img{
-        width: 315px;
-    }
-
-    .thisnone {
-        display: none;
+        width: 215px;
     }
 
     .footer-right {
@@ -213,8 +119,10 @@
         max-width: 390px;
     }
 
-    .navbar_wrapper,
-    .navbar {
+    .navbar_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
         height: 120px;
     }
 
@@ -227,71 +135,27 @@
         padding-bottom: 20px;
     }
 
-    .header_top_wrapper {
+    .our_dogs_boys_wrapper {
+        display: flex;
+    }
+
+    .our_dogs_wrapper {
         display: flex;
         flex-direction: column;
     }
 
-    .header_top_right img{
-        width: 100px;
-    } 
-
-    .item_contact_wrapper {
-        flex-direction: column;
-    }
-
-    .item-contact {
-        display: block;
-    }
-
-    .item-contact p{
-        margin-bottom: 10px;
-    }
-
-    .social_network_icon_wrapper {
-        width: 20%;
-    }
-
-    .our_philosophy_right {
-        width: 390px;
-    }
-
-    .want_puppy_black {
-        height: 200px;
-    }
-
-    .button_black {
-        font-size: 18px;
-        width: 150px;   
-        padding: 10px 25px; 
-     }
-
-    .our_dogs_header {
-        width: 200px;
+    .dog_name_wrapper {
+        height: 180px;
     }
 
     .dog {
+        width: 100%;
+        padding-bottom: 15px;
         text-align: center;
     }
 
-    .slider_item {
-        flex: 0 0 100%; 
-        max-width: 100%;
-    }
-
-    .nursery_top_wrapper {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-
-    .thisnone1 {
-        display: none;
-    }
-
-    .news_item_text {
-        width: 370px;
-        padding-right: 0;
+    .dog img{
+        width: 315px;
     }
 
     .footer_container {
@@ -317,14 +181,11 @@
             left: 330px;
         }
 
-        .our_philosophy_right,
-        .footer-right {
-            width: 355px;
-        }
-
-        .our_philosophy_left,
-        .slider_item {
-            padding-right: 0px;
+        .our_history_photo_gold img,
+        .our_history_photo img,
+        .our_history_left img,
+        .our_history_video iframe{
+            width: 360px;
         }
 
     }

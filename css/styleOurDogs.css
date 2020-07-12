@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1180px;
+	margin: 0 auto;
+    padding: 0 auto;
+}
+
+.navbar {
+    background-image: url(../images/nav-color.png);
+    height: 127px;
+}
+
+.navbar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 127px;
+}
+
+.nav_container {
+    width: 70%;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav li,
+.language li {
+    list-style-type: none;
+}
+
+.nav a,
+.language a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #5ed5e5;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+.nav-link:hover {
+    color: #5ed5e5;
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+}
+
+.language {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.header_top {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    background-color: #f2f3f3;
+    color: #808080;
+    font-size: 12px;
+}
+
+/*our_dogs*/
+
+.our_dogs_girls {
+    display: flex;
+    background-color: #f2f3f3;
+}
+
+.our_dogs_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.our_dogs_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 0 54px 0;
+}
+
+.our_dogs_header h2 {
+    margin-left: 0;
+}
+
+.prev, .next {
+    cursor: pointer;
+    font-size: 48px;
+    color:#808080;
+}
+
+.our_dogs_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.dog {
+    width: 29%;
+}
+
+.dog_name_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    height: 215px;
+}
+
+.dog_name {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: initial;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.dog_title {
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dog_text {
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+
+.button_dog_wrapper {
+    text-align: center;
+}
+
+.button_dog {
+    color: white;
+    background-color: #4d4d4d;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 15px 35px 15px 35px;
+    border: none;
+}
+
+.button_dog:hover {
+    background-color: #5ed5e5;
+}
+
+.button_dog:active {
+    background-color: #5ed5e5;
+}
+
+/*footer*/
+
+.footer_container {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    height: 400px;
+}
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/square.png);
+    background-repeat: no-repeat;
+    height: 255px;
+}
+
+.footer-header h2 {
+    margin-bottom: 40px;
+    margin-left: 95px;
+    padding-bottom: 0px;
+    color: white;
+    
+}
+
+.footer-header p {
+    margin-left: 95px;
+    color: white;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 215px;
+    width: 570px;
+}
+
+.icon-location,
+.phone-icon,
+.email-icon {
+    position: relative;
+    line-height: 42px;
+    padding-left: 45px;
+    color: white;
+}
+
+.icon-location::before,
+.phone-icon::before,
+.email-icon::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    left: 0;
+    top: 10px;
+}
+
+.icon-location::before {
+    background: url(/images/icon_location.png) left 0 no-repeat;
+}
+
+.phone-icon::before {
+    background: url(/images/phone-icon.png) left 0 no-repeat;
+}
+
+.email-icon::before {
+    background: url(/images/email-icon.png) left 0 no-repeat;
+   
+}
+
+.icons {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.map-responsive iframe{
+    height: 315px;
+    width:100%;
+}
